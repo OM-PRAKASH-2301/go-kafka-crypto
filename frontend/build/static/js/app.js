@@ -5,8 +5,7 @@ async function fetchLatestPrice() {
     const data = await res.json();
 
     document.getElementById("root").innerHTML = `
-      <h1>Crypto Prices</h1>
-      <div style="border:1px solid #ccc; padding:1rem; border-radius:8px; display:inline-block; min-width:250px;">
+      <div class="price-card">
         <p><strong>Symbol:</strong> ${data.symbol}</p>
         <p><strong>Price:</strong> $${data.price.toFixed(2)}</p>
         <p><strong>Time:</strong> ${new Date(data.time).toLocaleString()}</p>

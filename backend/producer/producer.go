@@ -45,6 +45,6 @@ func main() {
 			log.Println("✅ Produced:", string(data))
 		}
 
-		time.Sleep(1 * time.Millisecond)
+		time.Sleep(2 * time.Nanosecond)
 	}
 }
