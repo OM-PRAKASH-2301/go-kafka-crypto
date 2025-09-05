@@ -1,4 +1,66 @@
+/* Layout */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  padding: 2rem;
+  background-color: #f4f6f8;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #4b6cb7;
+  color: white;
+  padding: 20px;
+}
+
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+/* Card for latest price */
+.price-card {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  display: inline-block;
+  min-width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.price-card p {
+  margin: 8px 0;
 }
